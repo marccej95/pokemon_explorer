@@ -85,7 +85,7 @@ with col_3:
 
 with col_4:
     st.write(name.capitalize())
-    st.image(type_mapper[type])
+    st.image(type_mapper[type], width=70)
     st.write(str(height)+"m")
     st.write(str(weight)+"kg")
     st.write(str(moves))
