@@ -60,11 +60,11 @@ name, height, weight, moves, type, img_url, shiny_url, cry_url = get_details(pok
 height = height/10
 weight = weight/100
 
-height_data = pd.DataFrame(data={"Pokemon": ["Weedle", name.capitalize(), "Dragonair"], "Heights": [0.3,height,4]})
+height_data = pd.DataFrame(data={"Pokemon": ["Weedle", name, "Dragonair"], "Height (m)": [0.3,height,4]})
 
 colors = ["gray",colour_mapper[type],"gray"]
 
-graph = sns.barplot(data=height_data, x="Pokemon", y="Heights", palette=colors)
+graph = sns.barplot(data=height_data, x="Pokemon", y="Height (m)", palette=colors)
 
 col_1, col_2, col_3, col_4 = st.columns(4)
 
