@@ -64,7 +64,7 @@ height_data = pd.DataFrame(data={"Pokemon": ["Weedle", name.capitalize(), "Drago
 
 colors = ["gray",colour_mapper[type],"gray"]
 
-graph = sns.barplot(data=height_data, x="Pokemon", y="Height m", palette=colors)
+graph = sns.barplot(data=height_data, x="Pokemon", y="Heights", palette=colors)
 
 col_1, col_2, col_3, col_4 = st.columns(4)
 
