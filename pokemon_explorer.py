@@ -38,23 +38,23 @@ colour_mapper = {"normal":"#00b3b3",
                  "fairy":"#cc99ff"}
 
 type_mapper = {"normal":"https://archives.bulbagarden.net/media/upload/4/46/NormalIC_SM.png",
-                "fire":"https://archives.bulbagarden.net/media/upload/f/fa/FireIC_XY.png", 
-                "water":"https://archives.bulbagarden.net/media/upload/c/cd/WaterIC_XY.png", 
-                "grass":"https://archives.bulbagarden.net/media/upload/7/77/GrassIC_XY.png", 
-                "flying":"https://archives.bulbagarden.net/media/upload/5/50/FlyingIC_XY.png", 
+                "fire":"https://archives.bulbagarden.net/media/upload/a/a9/FireIC_SM.png", 
+                "water":"https://archives.bulbagarden.net/media/upload/c/c3/WaterIC_SM.png", 
+                "grass":"https://archives.bulbagarden.net/media/upload/3/33/GrassIC_SM.png", 
+                "flying":"https://archives.bulbagarden.net/media/upload/b/b1/FlyingIC_SM.png", 
                 "fighting":"https://archives.bulbagarden.net/media/upload/a/a5/FightingIC_SM.png", 
-                "poison":"https://archives.bulbagarden.net/media/upload/a/a2/PoisonIC_XY.png", 
-                "electric":"https://archives.bulbagarden.net/media/upload/d/db/ElectricIC_XY.png", 
-                "ground":"https://archives.bulbagarden.net/media/upload/1/11/GroundIC_XY.png", 
-                "rock":"https://archives.bulbagarden.net/media/upload/3/3a/RockIC_XY.png", 
-                "psychic":"https://archives.bulbagarden.net/media/upload/4/44/PsychicIC_XY.png", 
-                "ice":"https://archives.bulbagarden.net/media/upload/8/8c/IceIC_XY.png", 
+                "poison":"https://archives.bulbagarden.net/media/upload/8/86/PoisonIC_SM.png", 
+                "electric":"https://archives.bulbagarden.net/media/upload/5/58/ElectricIC_SM.png", 
+                "ground":"https://archives.bulbagarden.net/media/upload/c/c5/GroundIC_SM.png", 
+                "rock":"https://archives.bulbagarden.net/media/upload/6/65/RockIC_SM.png", 
+                "psychic":"https://archives.bulbagarden.net/media/upload/0/05/PsychicIC_SM.png", 
+                "ice":"https://archives.bulbagarden.net/media/upload/0/00/IceIC_SM.png", 
                 "bug":"https://archives.bulbagarden.net/media/upload/3/35/BugIC_SM.png", 
-                "ghost":"https://archives.bulbagarden.net/media/upload/7/76/GhostIC_XY.png", 
-                "steel":"https://archives.bulbagarden.net/media/upload/2/24/SteelIC_XY.png", 
-                "dragon":"https://archives.bulbagarden.net/media/upload/8/8d/DragonIC_XY.png", 
-                "dark":"https://archives.bulbagarden.net/media/upload/8/8f/DarkIC_XY.png", 
-                "fairy":"https://archives.bulbagarden.net/media/upload/b/ba/FairyIC_XY.png"}
+                "ghost":"https://archives.bulbagarden.net/media/upload/2/2a/GhostIC_SM.png", 
+                "steel":"https://archives.bulbagarden.net/media/upload/b/be/SteelIC_SM.png", 
+                "dragon":"https://archives.bulbagarden.net/media/upload/d/db/DragonIC_SM.png", 
+                "dark":"https://archives.bulbagarden.net/media/upload/c/c8/DarkIC_SM.png", 
+                "fairy":"https://archives.bulbagarden.net/media/upload/2/25/FairyIC_SM.png"}
 
 name, height, weight, moves, type, img_url, shiny_url, cry_url = get_details(pokemon_number)
 height = height/10
