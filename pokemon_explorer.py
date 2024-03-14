@@ -49,7 +49,7 @@ type_mapper = {"normal":"https://archives.bulbagarden.net/media/upload/4/46/Norm
                 "rock":"https://archives.bulbagarden.net/media/upload/3/3a/RockIC_XY.png", 
                 "psychic":"https://archives.bulbagarden.net/media/upload/4/44/PsychicIC_XY.png", 
                 "ice":"https://archives.bulbagarden.net/media/upload/8/8c/IceIC_XY.png", 
-                "bug":"https://bulbapedia.bulbagarden.net/wiki/File:BugIC_XY.png", 
+                "bug":"https://archives.bulbagarden.net/media/upload/3/35/BugIC_SM.png", 
                 "ghost":"https://archives.bulbagarden.net/media/upload/7/76/GhostIC_XY.png", 
                 "steel":"https://archives.bulbagarden.net/media/upload/2/24/SteelIC_XY.png", 
                 "dragon":"https://archives.bulbagarden.net/media/upload/8/8d/DragonIC_XY.png", 
