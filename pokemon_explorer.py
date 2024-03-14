@@ -16,8 +16,6 @@ def get_details(poke_number):
     except Exception as error:
         return error, np.NAN, np.NAN, np.NAN, np.NaN, np.NaN, np.NaN, np.NaN
 
-
-## Input number to get pokemon
 pokemon_number = st.number_input("Pick a pokemon", min_value=1, max_value=1025)
 
 colour_mapper = {"normal":"#00b3b3",
@@ -39,6 +37,24 @@ colour_mapper = {"normal":"#00b3b3",
                  "dark":"#006666", 
                  "fairy":"#cc99ff"}
 
+type_mapper = {"normal":"https://archives.bulbagarden.net/media/upload/4/46/NormalIC_SM.png",
+                "fire":"https://archives.bulbagarden.net/media/upload/f/fa/FireIC_XY.png", 
+                "water":"https://archives.bulbagarden.net/media/upload/c/cd/WaterIC_XY.png", 
+                "grass":"https://archives.bulbagarden.net/media/upload/7/77/GrassIC_XY.png", 
+                "flying":"https://archives.bulbagarden.net/media/upload/5/50/FlyingIC_XY.png", 
+                "fighting":"https://archives.bulbagarden.net/media/upload/a/a5/FightingIC_SM.png", 
+                "poison":"https://archives.bulbagarden.net/media/upload/a/a2/PoisonIC_XY.png", 
+                "electric":"https://archives.bulbagarden.net/media/upload/d/db/ElectricIC_XY.png", 
+                "ground":"https://archives.bulbagarden.net/media/upload/1/11/GroundIC_XY.png", 
+                "rock":"https://archives.bulbagarden.net/media/upload/3/3a/RockIC_XY.png", 
+                "psychic":"https://archives.bulbagarden.net/media/upload/4/44/PsychicIC_XY.png", 
+                "ice":"https://archives.bulbagarden.net/media/upload/8/8c/IceIC_XY.png", 
+                "bug":"https://archives.bulbagarden.net/media/upload/4/45/BugIC_XY.png", 
+                "ghost":"https://archives.bulbagarden.net/media/upload/7/76/GhostIC_XY.png", 
+                "steel":"https://archives.bulbagarden.net/media/upload/2/24/SteelIC_XY.png", 
+                "dragon":"https://archives.bulbagarden.net/media/upload/8/8d/DragonIC_XY.png", 
+                "dark":"https://archives.bulbagarden.net/media/upload/8/8f/DarkIC_XY.png", 
+                "fairy":"https://archives.bulbagarden.net/media/upload/b/ba/FairyIC_XY.png"}
 
 name, height, weight, moves, type, img_url, shiny_url, cry_url = get_details(pokemon_number)
 height = height/10
@@ -50,19 +66,30 @@ colors = ["gray",colour_mapper[type],"gray"]
 
 graph = sns.barplot(data=height_data, x="Pokemon", y="Heights", palette=colors)
 
-left_co, cent_co, right_co = st.columns(3)
+col_1, col_2, col_3, col_4 = st.columns(4)
 
-with cent_co:
+with col_1:
     st.image(img_url, width=200)
     st.write("Normal Sprite")
+
+with col_2:
     st.image(shiny_url, width=200)
     st.write("Shiny Sprite")
-st.audio(cry_url)
-st.write(f"Name: {name.capitalize()}")
-st.write(f"Type: {type.capitalize()}")
-st.write(f"Height: {height}m")
-st.write(f"Weight: {weight}kg")
-st.write(f"Move Count: {moves}")
 
+with col_3:
+    st.write("Name: ")
+    st.write("Type: ")
+    st.write("Height: ")
+    st.write("Weight: ")
+    st.write("Move Count: ")
+
+with col_4:
+    st.write(name.capitalize())
+    st.image(type_mapper[type])
+    st.write(str(height)+"m")
+    st.write(str(weight)+"kg")
+    st.write(str(moves))
+
+st.audio(cry_url)
 
 st.pyplot(graph.figure)
