@@ -60,7 +60,7 @@ name, height, weight, moves, type, img_url, shiny_url, cry_url = get_details(pok
 height = height/10
 weight = weight/100
 
-height_data = pd.DataFrame(data={"Pokemon": ["Weedle", name, "Dragonair"], "Heights": [0.3,height,4]})
+height_data = pd.DataFrame(data={"Pokemon": ["Weedle", name.capitalize(), "Dragonair"], "Heights": [0.3,height,4]})
 
 colors = ["gray",colour_mapper[type],"gray"]
 
